@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тест chrome_annotation / intent detection</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; margin: 0; padding: 24px; max-width: 720px; line-height: 1.6; }
+    h1 { font-size: 22px; }
+    a { display: block; padding: 14px 16px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; color: #111; text-decoration: none; }
+    a:hover { background: #f5f5f5; }
+    small { color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Тест chrome_annotation / intent detection</h1>
+  <p>Три страницы с одинаковым текстом, отличаются только метатегами. Откройте на iPhone в iOS Chrome и посмотрите, как Chrome подсвечивает адреса, телефоны и email.</p>
+  <a href="a.html"><strong>Вариант A</strong> — без метатегов</a>
+  <a href="b.html"><strong>Вариант B</strong> — <code>&lt;meta name="format-detection"&gt;</code> (telephone/date/email/address = no)</a>
+  <a href="c.html"><strong>Вариант C</strong> — <code>&lt;meta name="chrome" content="nointentdetection"&gt;</code></a>
+  <small>Общий текст страниц: список адресов доставки, телефон, email и дата.</small>
+</body>
+</html>
